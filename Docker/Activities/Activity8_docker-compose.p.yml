@@ -9,7 +9,7 @@ services:
     api:
         build:
             context: ./server
-        image: docker.io/poojashri/complex_api    
+        image: docker.io/garima/complex_api    
         environment:
             - REDIS_HOST=redis
             - REDIS_PORT=6379
@@ -21,11 +21,11 @@ services:
     client:
         build:
             context: ./client
-        image: docker.io/poojashri/complex_client  
+        image: docker.io/garima/complex_client  
     worker:
         build:
             context: ./worker
-        image: docker.io/poojashri/complex_worker
+        image: docker.io/garima/complex_worker
         environment:
             - REDIS_HOST=redis
             - REDIS_PORT=6379  
