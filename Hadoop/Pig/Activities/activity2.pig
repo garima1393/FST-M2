@@ -10,4 +10,4 @@ totalCount = FOREACH grpd GENERATE $0 AS word, COUNT($1) AS no_of_words;
 --To remove old outputs
 rmf hdfs:///user/jivan/PigOutput1;
 -- Store the result in HDFS
-STORE totalCount INTO 'hdfs:///user/poojashri/PigOutput1';
+STORE totalCount INTO 'hdfs:///user/garima/PigOutput1';
