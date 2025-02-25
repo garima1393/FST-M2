@@ -8,4 +8,4 @@ CountByCountry = FOREACH GroupByCountry GENERATE CONCAT((chararray)$0, CONCAT(':
 -- Remove old output
 rmf hdfs:///user/jivan/PigOutput2;
 -- Save result in HDFS folder
-STORE CountByCountry INTO 'hdfs:///user/poojashri/PigOutput2';
+STORE CountByCountry INTO 'hdfs:///user/garima/PigOutput2';
