@@ -10,7 +10,7 @@ services:
   api:
     build:
       context: ./
-    image: docker.io/poojashri/simpleproject
+    image: docker.io/garima/simpleproject
     environment:
       - POSTGRES_PORT=5432
       - POSTGRES_HOST=localhost
